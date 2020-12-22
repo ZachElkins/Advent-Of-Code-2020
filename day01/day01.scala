@@ -5,7 +5,7 @@ object Day01 {
 
         // MARK: General Setup
         val filename = "input.txt"
-        // val lines = Source.fromFile(filename).getLines
+        
         val target = 2020
 
         val lstStr: List[String] = Source.fromFile(filename).getLines.toList

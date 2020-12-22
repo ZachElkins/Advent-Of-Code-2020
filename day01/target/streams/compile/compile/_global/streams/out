@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day01/day01.scala:2:8: not found: object sbt[0m
-[0m[[0m[31merror[0m] [0m[0mimport sbt._[0m
-[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day01/day01.scala:16:13: not found: value num[0m
+[0m[[0m[31merror[0m] [0m[0m        if (num._1 == -1) println("No solution found")[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
