@@ -1,4 +1,13 @@
-[0m[[0m[33mwarn[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day02/day02.scala:21:56: comparing values of types Char and String using `==' will always yield false[0m
-[0m[[0m[33mwarn[0m] [0m[0m                    val countOfChar = password.count(_ == (char.toString))[0m
-[0m[[0m[33mwarn[0m] [0m[0m                                                       ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day02/day02.scala:50:49: comparing values of types Char and String using `==' will always yield false[0m
+[0m[[0m[33mwarn[0m] [0m[0m                    if ( ( password(i1.toInt-1) == char || password(i2.toInt-1) == char ) && !( password(i1.toInt-1) == char && password(i1.toInt-2) == char ) ) {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day02/day02.scala:50:81: comparing values of types Char and String using `==' will always yield false[0m
+[0m[[0m[33mwarn[0m] [0m[0m                    if ( ( password(i1.toInt-1) == char || password(i2.toInt-1) == char ) && !( password(i1.toInt-1) == char && password(i1.toInt-2) == char ) ) {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day02/day02.scala:50:118: comparing values of types Char and String using `==' will always yield false[0m
+[0m[[0m[33mwarn[0m] [0m[0m                    if ( ( password(i1.toInt-1) == char || password(i2.toInt-1) == char ) && !( password(i1.toInt-1) == char && password(i1.toInt-2) == char ) ) {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                                                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day02/day02.scala:50:150: comparing values of types Char and String using `==' will always yield false[0m
+[0m[[0m[33mwarn[0m] [0m[0m                    if ( ( password(i1.toInt-1) == char || password(i2.toInt-1) == char ) && !( password(i1.toInt-1) == char && password(i1.toInt-2) == char ) ) {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                                                                                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mfour warnings found[0m
