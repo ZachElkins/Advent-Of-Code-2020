@@ -1,5 +1,5 @@
 import scala.io.Source
-import sbt._
+// import sbt._
 
 object Day01 {
     def main(args: Array[String]): Unit = {
@@ -8,19 +8,25 @@ object Day01 {
         // val lines = Source.fromFile(filename).getLines
         val target = 2020
 
-        for (s1 <- Source.fromFile(filename).getLines) {
+        val lstStr: List[String] = Source.fromFile(filename).getLines.toList
+        val lstInt: List[Int] = lstStr.map(_.toInt)
 
-            val v1 = s1.toInt
-            
-            for (s2 <- Source.fromFile(filename).getLines) {
+        val nums = findTwoSummingToTarget( lstInt, target )
+        val solution = nums._1 * nums._2
 
-                val v2 = s2.toInt
-                
+        if (nums._1 == -1) println("No solution found")
+        else println(s"Solution found! ${nums._1} + ${nums._2} = $target, so ${nums._1} * ${nums._2} = $solution")
+
+    }
+
+    def findTwoSummingToTarget(lst: List[Int], target: Int): (Int, Int) = {
+        for (v1 <- lst) {
+            for (v2 <- lst) {
                 if (v1 + v2 == target) {
-                    val solution = v1 * v2
-                    println(s"Solution found! $v1 + $v2 = $target, so $v1 * $v2 = $solution")
+                    return (v1, v2)
                 }
             }
         }
+        (-1, -1)
     }
 }
