@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day04/day04.scala:49:21: not found: value list[0m
+[0m[[0m[31merror[0m] [0m[0m        return ret++list(curr)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
