@@ -1,4 +1,12 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day04/day04.scala:49:21: not found: value list[0m
-[0m[[0m[31merror[0m] [0m[0m        return ret++list(curr)[0m
-[0m[[0m[31merror[0m] [0m[0m                    ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day04/day04.scala:78:27: not found: value x[0m
+[0m[[0m[31merror[0m] [0m[0m            case "pid" => x.size == 9 && x.forall(Character.isDigit)[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day04/day04.scala:78:42: not found: value x[0m
+[0m[[0m[31merror[0m] [0m[0m            case "pid" => x.size == 9 && x.forall(Character.isDigit)[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day04/day04.scala:78:61: missing argument list for method isDigit in class Character[0m
+[0m[[0m[31merror[0m] [0m[0mUnapplied methods are only converted to functions when a function type is expected.[0m
+[0m[[0m[31merror[0m] [0m[0mYou can make this conversion explicit by writing `isDigit _` or `isDigit(_)` instead of `isDigit`.[0m
+[0m[[0m[31merror[0m] [0m[0m            case "pid" => x.size == 9 && x.forall(Character.isDigit)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
