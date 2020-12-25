@@ -1,0 +1,1 @@
+["sbt.Task[scala.collection.immutable.Map[java.lang.String, scala.collection.Seq[scala.Tuple2[java.nio.file.Path, sbt.nio.FileStamp]]]]",{"2.12.10":{"hashes":[["/Users/zelkins/Desktop/Advent-Of-Code-2020/day06/day06.scala","39a796d6421f09056a8d29b61d2a87f7b9bce0e2"]],"lastModifiedTimes":[]}}]
