@@ -1,2 +1,4 @@
 # Advent-Of-Code-2020
-https://adventofcode.com
+_https://adventofcode.com_
+
+Tring to do as much as I can while getting more comfortable with scala

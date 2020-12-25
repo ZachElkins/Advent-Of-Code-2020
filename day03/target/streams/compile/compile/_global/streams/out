@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day03/day03.scala:23:96: not found: value productOfTees[0m
+[0m[[0m[31merror[0m] [0m[0m        println(s"The product of all the trees you'd hit on thoe ${paths.size} slops would be $productOfTees")[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
