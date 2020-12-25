@@ -1,7 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day05/day05.scala:15:32: value subString is not a member of String[0m
-[0m[[0m[31merror[0m] [0m[0m        val rowCode = codes(0).subString(0, 6)[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day05/day05.scala:16:32: value subString is not a member of String[0m
-[0m[[0m[31merror[0m] [0m[0m        val colCode = codes(0).subString(6, 9)[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day05/day05.scala:42:62: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : List[Int][0m
+[0m[[0m[31merror[0m] [0m[0m required: Int[0m
+[0m[[0m[31merror[0m] [0m[0m            getAllIDs(codes.drop(1), rowRange, colRange, sIDs::sID::Nil)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
