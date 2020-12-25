@@ -12,7 +12,7 @@ object Day06 {
         println(s"The sum of the data is: $sumOfData")
 
         // MARK: Part 2
-        val total = partitionData(lst).foldLeft(List(0))( (acc, elt) => {
+        val total: Int = partitionData(lst).foldLeft(List(0))( (acc, elt) => {
             val matches: List[String] = elt.foldLeft(('a' to 'z' ).toList.map(_.toString))( (acc, elt) => {
                 acc.intersect(elt)
             })
