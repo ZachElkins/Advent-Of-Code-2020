@@ -37,6 +37,7 @@ object Day07 {
     def containsShinyGoldBag(bagContents: Map[String, List[String]], currentBag: String): Boolean = {
         // println(bagContents(currentBag))
         val contents = bagContents(currentBag)
+
         if (bagContents(currentBag).contains("shiny gold") ) {
             println(s"Found it! $currentBag")
             true
