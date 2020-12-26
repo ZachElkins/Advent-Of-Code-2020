@@ -49,7 +49,7 @@ object Day07 {
             for (b <- contents) {
                 if (containsShinyGoldBag(bagContents, b)) {
                     println(s"Found another! $b inside a $currentBag")
-                    true
+                    return true
                 }
                 else false
             }
