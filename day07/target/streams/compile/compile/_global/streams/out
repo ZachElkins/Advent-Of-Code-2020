@@ -1,6 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day07/day07.scala:67:37: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Double[0m
-[0m[[0m[31merror[0m] [0m[0m required: Int[0m
-[0m[[0m[31merror[0m] [0m[0m                count = count + 0.5 + (b._1 * cotainsShinyGoldBagWithCounter(bagContents, b._2))[0m
-[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day07/day07.scala:10:20: ';' expected but integer literal found.[0m
+[0m[[0m[31merror[0m] [0m[0m        MARK: Part 1[0m
+[0m[[0m[31merror[0m] [0m[0m                   ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
