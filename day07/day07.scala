@@ -45,35 +45,32 @@ object Day07 {
         val bagContentsAndNumbers: Map[String, List[(Int, String)]] = bagNamesAndNumbersClean.map(data =>
             (data.head -> data.tail.map(d => {
                 if (d.size >= 1) {
-                    (d(0).toInt -> d.substring(2, d.size))
+                    (d(0).toString.toInt -> d.substring(2, d.size))
                 } else {
                     (-1, "")
                 }
-            }).toList.filter(_ != (-1, "")))).toMap
+            }))).toMap
 
         // for (b <- bagContentsAndNumbers) {
         //     println(b)
         // }
-
         val result = cotainsShinyGoldBagWithCounter(bagContentsAndNumbers, "shiny gold")
 
-        println(result)
-
-
+        println(s"You can fit $result bags in a single shiny gold bag")
     }
 
     def cotainsShinyGoldBagWithCounter(bagContents: Map[String, List[(Int, String)]], currentBag: String): Int = {
         val contents = bagContents(currentBag)
-        if (contents == List.empty) {
+        if (contents == List((-1, ""))) {
+            println(currentBag)
             1
         } else {
             var count = 0
             for (b <- contents) {
-                val a = cotainsShinyGoldBagWithCounter(bagContents, b._2)
-                // println(b._1)
-                count = count + b._1 * cotainsShinyGoldBagWithCounter(bagContents, b._2)
+                // println(s"${b._1}: ${b._2}")
+                count = count + (b._1 * cotainsShinyGoldBagWithCounter(bagContents, b._2))
             }
-            count
+            return count
         }
     }
 
