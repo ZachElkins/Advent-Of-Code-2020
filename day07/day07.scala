@@ -5,7 +5,30 @@ object Day07 {
         
         // MARK: General Setup
         val filename = "input.txt"
-        val lst = Source.fromFile(filename).getLines.toList
+        // val lst = Source.fromFile(filename).getLines.toList
+
+        // val lst = List(
+        //     "shiny gold bags contain 2 dark red bags.",
+        //     "dark red bags contain 2 dark orange bags.",
+        //     "dark orange bags contain 2 dark yellow bags.",
+        //     "dark yellow bags contain 2 dark green bags.",
+        //     "dark green bags contain 2 dark blue bags.",
+        //     "dark blue bags contain 2 dark violet bags.",
+        //     "dark violet bags(contain no other bags."
+        // )
+
+
+        val lst = List(
+            "light red bags contain 1 bright white bag, 2 muted yellow bags.",
+            "dark orange bags contain 3 bright white bags, 4 muted yellow bags.",
+            "bright white bags contain 1 shiny gold bag.",
+            "muted yellow bags contain 2 shiny gold bags, 9 faded blue bags.",
+            "shiny gold bags contain 1 dark olive bag, 2 vibrant plum bags.",
+            "dark olive bags contain 3 faded blue bags, 4 dotted black bags.",
+            "vibrant plum bags contain 5 faded blue bags, 6 dotted black bags.",
+            "faded blue bags contain no other bags.",
+            "dotted black bags contain no other bags."
+        )
 
         // MARK: Part 1
         // val bagNames: List[List[String]] = lst.map(_.split("( bags contain)?(,?\\s\\d\\s)").toList)
@@ -33,9 +56,6 @@ object Day07 {
         val bagNamesAndNumbers: List[List[String]] = lst.map(_.split("( bag)s?[.,]?").toList)
         val bagNamesAndNumbersClean: List[List[String]] = bagNamesAndNumbers.map(data => {
             data.map(d => {
-                // if(d.contains("no other")) {
-                //     println(s"${d.size}: $d")
-                // }
                 if (d.startsWith(" contain no other")) ""
                 else if (d.startsWith(" contain ")) d.substring(9, d.size)
                 else if (d.startsWith(" ")) d.substring(1, d.size)
@@ -49,11 +69,11 @@ object Day07 {
                 } else {
                     (-1, "")
                 }
-            }))).toMap
+            }).toList.filter(_ != (-1, "")))).toMap
 
-        // for (b <- bagContentsAndNumbers) {
-        //     println(b)
-        // }
+        for (b <- bagContentsAndNumbers) {
+            println(b)
+        }
         val result = cotainsShinyGoldBagWithCounter(bagContentsAndNumbers, "shiny gold")
 
         println(s"You can fit $result bags in a single shiny gold bag")
@@ -61,15 +81,17 @@ object Day07 {
 
     def cotainsShinyGoldBagWithCounter(bagContents: Map[String, List[(Int, String)]], currentBag: String): Int = {
         val contents = bagContents(currentBag)
-        if (contents == List((-1, ""))) {
-            println(currentBag)
+        if (contents == List.empty) {
             1
         } else {
             var count = 0
             for (b <- contents) {
-                // println(s"${b._1}: ${b._2}")
-                count = count + (b._1 * cotainsShinyGoldBagWithCounter(bagContents, b._2))
+                val c = cotainsShinyGoldBagWithCounter(bagContents, b._2)
+                println(s"count = $count + ${b._1} + (${b._1} * $c)")
+                // count = count + b._1 + (b._1 * cotainsShinyGoldBagWithCounter(bagContents, b._2))
+                count = count + b._1 + (b._1 * c)
             }
+            // println(count)
             return count
         }
     }
