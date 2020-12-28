@@ -1,10 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day08/day08.scala:27:91: too many arguments (3) for method ++: (that: scala.collection.GenTraversableOnce[B])(implicit bf: scala.collection.generic.CanBuildFrom[List[(String, Int, Boolean)],B,That])That[0m
-[0m[[0m[31merror[0m] [0m[0m                            val flaggedInstructions = instructions.slice(0, index) ++ (i, v, true) ++ instructions.slice(index+1, instructions.size)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                          ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day08/day08.scala:31:91: too many arguments (3) for method ++: (that: scala.collection.GenTraversableOnce[B])(implicit bf: scala.collection.generic.CanBuildFrom[List[(String, Int, Boolean)],B,That])That[0m
-[0m[[0m[31merror[0m] [0m[0m                            val flaggedInstructions = instructions.slice(0, index) ++ (i, v, true) ++ instructions.slice(index+1, instructions.size)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                          ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day08/day08.scala:35:91: too many arguments (3) for method ++: (that: scala.collection.GenTraversableOnce[B])(implicit bf: scala.collection.generic.CanBuildFrom[List[(String, Int, Boolean)],B,That])That[0m
-[0m[[0m[31merror[0m] [0m[0m                            val flaggedInstructions = instructions.slice(0, index) ++ (i, v, true) ++ instructions.slice(index+1, instructions.size)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                          ^[0m
-[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day08/day08.scala:30:21: ')' expected but 'if' found.[0m
+[0m[[0m[31merror[0m] [0m[0m                    if (res._1 == 1) {[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
