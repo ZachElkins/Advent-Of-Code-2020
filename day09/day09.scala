@@ -1,5 +1,4 @@
 import scala.io.Source
-import scala.util.matching.Regex
 
 object Day09 {
     def main(args: Array[String]): Unit = {
@@ -17,7 +16,6 @@ object Day09 {
         val sum = numbers.head + numbers.last
         println(s"$numbers sum to $invalidNum. The highest and lowest sum to $sum")
         
-
     }
 
     def findInvalidNumber(numbers: List[Long], preambleLength: Int): Long = {
