@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day11/day11.scala:29:25: not found: value result[0m
+[0m[[0m[31merror[0m] [0m[0m    val occupiedSeats = result.foldLeft(0)((acc, elt) => { acc + elt.foldLeft(0)((acc, elt) => { if (elt == "#") acc + 1 else acc }) })[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
