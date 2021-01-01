@@ -1,6 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day10/day10.scala:10:54: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : List[String][0m
-[0m[[0m[31merror[0m] [0m[0m required: List[Int][0m
-[0m[[0m[31merror[0m] [0m[0m        val jDiffs: (Int, Int) = findJoltDifferences(lst)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                     ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day10/day10.scala:19:38: not found: value findAllArrangments[0m
+[0m[[0m[31merror[0m] [0m[0m        val totalArrangments: Long = findAllArrangments(lst)[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day10/day10.scala:41:33: not found: value findAllArrangments[0m
+[0m[[0m[31merror[0m] [0m[0m                count = count + findAllArrangments(newNums)[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

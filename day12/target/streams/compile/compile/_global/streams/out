@@ -1,71 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day12/day12.scala:63:73: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m required: (Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m                        case "N" => readInstructions(instructions.tail, (acc._1-m, acc._2, acc._3, acc._4), currentDirection)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                        ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day12/day12.scala:64:73: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m required: (Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m                        case "E" => readInstructions(instructions.tail, (acc._1, acc._2+m, acc._3, acc._4), currentDirection)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                        ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day12/day12.scala:65:73: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m required: (Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m                        case "S" => readInstructions(instructions.tail, (acc._1, acc._2, acc._3+m, acc._4), currentDirection)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                        ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day12/day12.scala:66:73: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m required: (Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m                        case "W" => readInstructions(instructions.tail, (acc._1, acc._2, acc._3, acc._4-m), currentDirection)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                        ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day12/day12.scala:68:77: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m required: (Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m                            case 90  => readInstructions(instructions.tail, acc, if(currentDirection+1 > 4) currentDirection+1-4 else currentDirection+1 )[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                            ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day12/day12.scala:69:77: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m required: (Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m                            case 180 => readInstructions(instructions.tail, acc, if(currentDirection+2 > 4) currentDirection+2-4 else currentDirection+2 )[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                            ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day12/day12.scala:70:77: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m required: (Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m                            case 270 => readInstructions(instructions.tail, acc, if(currentDirection+3 > 4) currentDirection+3-4 else currentDirection+3 )[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                            ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day12/day12.scala:73:77: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m required: (Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m                            case 90  => readInstructions(instructions.tail, acc, if(currentDirection-1 < 1) 4+(currentDirection-1) else currentDirection-1 )[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                            ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day12/day12.scala:74:77: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m required: (Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m                            case 180 => readInstructions(instructions.tail, acc, if(currentDirection-2 < 1) 4+(currentDirection-2) else currentDirection-2 )[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                            ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day12/day12.scala:75:77: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m required: (Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m                            case 270 => readInstructions(instructions.tail, acc, if(currentDirection-3 < 1) 4+(currentDirection-3) else currentDirection-3 )[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                            ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day12/day12.scala:78:75: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m required: (Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m                            case 1 => readInstructions(instructions.tail, (acc._1-m, acc._2, acc._3, acc._4), currentDirection)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                          ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day12/day12.scala:79:75: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m required: (Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m                            case 2 => readInstructions(instructions.tail, (acc._1, acc._2+m, acc._3, acc._4), currentDirection)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                          ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day12/day12.scala:80:75: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m required: (Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m                            case 3 => readInstructions(instructions.tail, (acc._1, acc._2, acc._3+m, acc._4), currentDirection)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                          ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day12/day12.scala:81:75: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : (Int, Int, Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m required: (Int, Int)[0m
-[0m[[0m[31merror[0m] [0m[0m                            case 4 => readInstructions(instructions.tail, (acc._1, acc._2, acc._3, acc._4-m), currentDirection)[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                          ^[0m
-[0m[[0m[31merror[0m] [0m[0m14 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day12/day12.scala:40:29: '{' expected but 'case' found.[0m
+[0m[[0m[31merror[0m] [0m[0m                            case 90  => if (signsMatch(wayPoint)) readInstructionsWaypoint(instructions.tail, acc, (wayPoint._1, wayPoint._2 * -1)) else readInstructionsWaypoint(instructions.tail, acc, (wayPoint._1 * -1, wayPoint._2))[0m
+[0m[[0m[31merror[0m] [0m[0m                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/zelkins/Desktop/Advent-Of-Code-2020/day12/day12.scala:43:25: Unmatched closing brace '}' ignored here[0m
+[0m[[0m[31merror[0m] [0m[0m                        }[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
